@@ -28,9 +28,16 @@ h1 {
   letter-spacing: 1px;
 }
 
-/* Grids */
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
 
-/* Remove secondAd after design is done */
+p {
+  font-size: 16px;
+}
+
+/* Grids (Remove ads after design is done) */
 
 .item {
   background-color: whitesmoke;
@@ -108,11 +115,29 @@ main {
 }
 
 main .application {
-  padding: 8px;
+  padding: 10px;
 }
 
 main .content {
-  padding: 8px;
+  padding: 25px;
+}
+
+main .content h2 {
+  text-align: center;
+}
+
+main .content p {
+  text-align: justify;
+}
+
+/* Aside */
+
+.firstAd {
+  padding: 10px;
+}
+
+.secondAd {
+  padding: 10px;
 }
 
 /* Footer */
