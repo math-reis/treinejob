@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
-/* Goblas Style */
+/* Global Style */
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 2048px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(50, 50, 50);
+  background-color: whitesmoke;
 }
 
 ul {
@@ -14,21 +22,18 @@ a {
   text-decoration: none;
 }
 
-h3 {
+h1 {
+  font-size: 20px;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  background-color: snow;
-  margin: 0 auto;
-  max-width: 2048px;
-}
+/* Grids */
+
+/* Remove ads after design is done */
 
 .item {
-  padding: 8px;
-  background-color: white;
+  background-color: whitesmoke;
   border: 1px solid tomato;
   /* border-radius: 6px; */
   /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25); */
@@ -89,11 +94,37 @@ body {
   }
 }
 
+/* Header */
+
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.nav-links {
+/* Main */
+
+main {
+  display: grid;
+}
+
+main .application {
+  padding: 8px;
+}
+
+main .content {
+  padding: 8px;
+}
+
+/* Footer */
+
+footer {
   display: flex;
+  padding: 2px;
+  justify-content: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(50, 50, 50);
 }
