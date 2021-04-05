@@ -30,7 +30,7 @@ h1 {
 
 /* Grids */
 
-/* Remove ads after design is done */
+/* Remove secondAd after design is done */
 
 .item {
   background-color: whitesmoke;
@@ -61,12 +61,12 @@ h1 {
     grid-row: 2 / 4;
   }
 
-  .sidebar {
+  .firstAd {
     grid-column: 1 / span 2;
     grid-row: 2 / 4;
   }
 
-  .ads {
+  .secondAd {
     grid-column: 1 / span 2;
   }
 
@@ -80,11 +80,11 @@ h1 {
     grid-column: 3 / span 8;
   }
 
-  .sidebar {
+  .firstAd {
     grid-row: 2 / 4;
   }
 
-  .ads {
+  .secondAd {
     grid-column: 11 / span 2;
     grid-row: 2 / 4;
   }
