@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fontawesome-all.min.css");
 
 /* Global Style */
 
@@ -103,30 +104,58 @@ p {
 
 /* Header */
 
-header {
+.header {
   display: flex;
   justify-content: center;
 }
 
 /* Main */
 
-main {
+.main {
   display: grid;
 }
 
-main .application {
-  padding: 10px;
-}
-
-main .content {
+.main .application {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 25px;
 }
 
-main .content h2 {
+.main .application .input {
+  display: grid;
   text-align: center;
 }
 
-main .content p {
+.main .application .input h2 {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.main .application .input input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 16px;
+
+  font-family: inherit;
+  text-align: center;
+}
+
+.main .application .output {
+  text-align: center;
+}
+
+.main .content {
+  padding: 25px;
+}
+
+.main .content h2 {
+  text-align: center;
+}
+
+.main .content p {
   text-align: justify;
 }
 
@@ -142,14 +171,14 @@ main .content p {
 
 /* Footer */
 
-footer {
+.footer {
   display: flex;
-  padding: 2px;
   justify-content: center;
+  align-items: center;
+  padding: 2px;
   font-size: 12px;
-  text-align: center;
 }
 
-footer a {
+.footer a {
   color: rgb(50, 50, 50);
 }
