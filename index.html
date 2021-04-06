@@ -24,16 +24,20 @@
           <div class="input">
             <h2>What is your kitten's name?</h2>
 
-            <input id="nameInput" type="text" />
+            <input id="nameInput" type="text" onkeyup="keyUp(event);" />
 
-            <button id="btn" type="button" onclick="window.location.reload(); checkSill(catsName)">Show Result</button>
-
+            <button
+              id="btn"
+              type="button"
+              onclick="window.location.reload(); checkSyllables(catsName)"
+            >
+              Show Result
+            </button>
           </div>
           <div class="output">
             <h2>Rate</h2>
 
             <output id="resultOutput" type="text"></output>
-
           </div>
         </div>
 
