@@ -1,13 +1,17 @@
+const catsName = document.getElementById("nameInput").value;
+
 function result(catsName) {
-  if (catsName.includes("ee", "i", "y")) {
-    console.log("Perfect");
-  }
-  if (!catsName.includes("ee", "i", "y") && catsName.includes("a", "e")) {
-    console.log("Good");
-  }
-  if (!catsName.includes("ee", "i", "y") && !catsName.includes("a", "e")) {
-    console.log("Bad");
+  for (cat in catsName) {
+    if (catsName.match(/ee|i|y/gi)) {
+      console.log("Perfect");
+      break;
+    } else if (catsName.match(/a|e/gi)) {
+      console.log("Good");
+      break;
+    } else {
+      console.log("Bad");
+    }
   }
 }
 
-result(document.getElementById("nameInput").value);
+result(catsName);
