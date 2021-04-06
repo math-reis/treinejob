@@ -1,17 +1,19 @@
 const catsName = document.getElementById("nameInput").value;
+const button = document.getElementById("btn");
 
-function result(catsName) {
-  for (cat in catsName) {
+const checkSill = () => {
+  for (i in catsName) {
     if (catsName.match(/ee|i|y/gi)) {
-      console.log("Perfect");
-      break;
+      document.getElementById("resultOutput").innerHTML = "Perfect";
+      return;
     } else if (catsName.match(/a|e/gi)) {
-      console.log("Good");
-      break;
+      document.getElementById("resultOutput").innerHTML = "Good";
+      return;
     } else {
-      console.log("Bad");
+      document.getElementById("resultOutput").innerHTML = "Bad";
+      return;
     }
   }
-}
+};
 
-result(catsName);
+checkSill(catsName);

@@ -23,15 +23,20 @@
         <div class="application">
           <div class="input">
             <h2>What is your kitten's name?</h2>
-            <input id="nameInput" type="text" name="name" keyup="onKeyUp" />
-            <button id="btn" type="button" onclick="">Show Result</button>
-          </div>
 
+            <input id="nameInput" type="text" />
+
+            <button id="btn" type="button" onclick="window.location.reload(); checkSill(catsName)">Show Result</button>
+
+          </div>
           <div class="output">
             <h2>Rate</h2>
-            <output id="result"></output>
+
+            <output id="resultOutput" type="text"></output>
+
           </div>
         </div>
+
         <div class="content">
           <h2>Did you know?</h2>
           <p></p>
