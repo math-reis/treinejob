@@ -118,7 +118,14 @@ p {
 .main .application {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 25px;
+  padding: 50px;
+  gap: 50px;
+}
+
+@media (max-width: 640px) {
+  .main .application {
+    grid-template-columns: none;
+  }
 }
 
 .main .application .input {
@@ -127,7 +134,6 @@ p {
 }
 
 .main .application .input h2 {
-  display: flex;
   align-self: flex-end;
   justify-content: center;
 }
@@ -138,13 +144,30 @@ p {
   border-radius: 5px;
   border-style: solid;
   font-size: 16px;
-
   font-family: inherit;
   text-align: center;
 }
 
+.main .application .input button {
+  color: rgb(38, 92, 155, 0.75);
+  background-color: inherit;
+  cursor: pointer;
+  width: 20%;
+  font-size: 18px;
+  border-style:ridge;
+  border-radius: 10px;
+  border-color: rgb(160, 156, 194);
+  
+
+}
+
 .main .application .output {
   text-align: center;
+  align-items: center;
+}
+
+.main .application .output output {
+  color: green;
 }
 
 .main .content {
