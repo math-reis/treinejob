@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How Good Is Your Cat's Name</title>
+    <!-- This fix favicon error -->
+    <link rel="shortcut icon" href="#" />
+    <title>How Good Is My Cat's Name</title>
     <link rel="stylesheet" href="style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    />
+    /> -->
   </head>
   <body>
     <div class="container">
@@ -21,11 +23,13 @@
         <div class="application">
           <div class="input">
             <h2>What is your kitten's name?</h2>
-            <input type="text" name="name" id="name" />
+            <input id="nameInput" type="text" name="name" keyup="onKeyUp" />
+            <button id="btn" type="button" onclick="">Show Result</button>
           </div>
+
           <div class="output">
             <h2>Rate</h2>
-            <output> </output>
+            <output id="result"></output>
           </div>
         </div>
         <div class="content">
@@ -34,7 +38,7 @@
           <p></p>
           <h2>What to do now?</h2>
           <p></p>
-          <i class="fas fa-paw"> Donate</i>
+          <!-- <i class="fas fa-paw"> Donate</i> -->
         </div>
       </main>
 
