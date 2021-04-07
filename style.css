@@ -155,6 +155,10 @@ table {
   border-radius: 3rem;
 }
 
+table th{
+/* justify text */
+}
+
 .donation {
   display: grid;
   justify-content: right;
