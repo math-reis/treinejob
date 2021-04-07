@@ -9,11 +9,11 @@ const checkSyllables = () => {
       return;
     } else if (catsName.match(/a|e/gi)) {
       document.getElementById("resultOutput").innerHTML =
-        "<b>Good!</b><br>Your kitten's name is great, and he (or she) will attach to it easily.";
+        "<b>Good.</b><br>Your kitten's name is great, and he (or she) will attach to it easily.";
       return;
     } else {
       document.getElementById("resultOutput").innerHTML =
-        "<b>Not so good...</b><br>Your kitten's name is lovely, but he (or she) may find it difficult to identify. But don't worry, you can keep the name and follow some of the tips below.";
+        "<b>Not so good .</b><br>Your kitten's name is lovely, but he (or she) may find it difficult to identify. But don't worry, you can keep the name and follow some of the tips below.";
       return;
     }
   }

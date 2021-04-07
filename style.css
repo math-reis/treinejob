@@ -7,14 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
-  max-width: 2048px;
-  font-family: "Poppins", sans-serif;
-  color: rgb(50, 50, 50);
-  background-color: whitesmoke;
-}
-
 ul {
   list-style: none;
 }
@@ -38,20 +30,148 @@ p {
   font-size: 16px;
 }
 
-/* Grids (Remove ads after design is done) */
-
-.item {
+body {
+  margin: 0 auto;
+  max-width: 2048px;
+  min-width: 480px;
+  color: rgb(50, 50, 50);
   background-color: whitesmoke;
-  /* border: 1px solid tomato; */
-  /* border-radius: 6px; */
-  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25); */
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: grid;
-  height: 100vh;
-  grid-template-rows: auto 1fr auto auto auto;
   height: 100%;
+  grid-template-rows: auto 1fr auto auto auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  color: rgb(30, 30, 30);
+  background-color: orange;
+  border-bottom: 3px solid darkorange;
+}
+
+.application {
+  padding: 25px;
+  text-align: center;
+}
+
+.input {
+  display: grid;
+  padding: 25px 25px 25px 25px;
+  margin: 25px 25px 40px 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 165, 0, 0.15);
+  border: solid;
+  border-width: 1px;
+  border-color: orange;
+  border-radius: 3rem;
+  box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
+}
+
+.input h2 {
+  margin: 0 auto;
+  font-weight: bold;
+  color: darkorange;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+input {
+  padding: 5px;
+  margin: 25px 0 25px 0;
+  font-size: inherit;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: darkorange;
+  border-width: 1px;
+}
+
+button {
+  padding: 5px;
+  margin: 0 100px 0 100px;
+  font-size: 22px;
+  background-color: rgb(255, 165, 0, 0.15);
+  border-style: solid;
+  border-color: orange;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
+}
+
+button:active {
+  margin: 3px 103px 3px 103px;
+  font-size: 20px;
+  background-color: rgb(255, 165, 0, 0.15);
+  box-shadow: 1px 1px 3px rgb(30, 30, 30, 0.5);
+}
+
+.output {
+  padding: 25px;
+  border-style: dashed;
+  border-color: orange;
+  border-radius: 3rem;
+}
+
+.content {
+  padding: 25px;
+}
+
+.content h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  color: darkorange;
+}
+
+.content p {
+  text-align: justify;
+}
+
+/* Aside */
+
+.firstAd {
+  padding: 10px;
+  /* background: repeating-linear-gradient(
+    -45deg,
+    #fcff7c,
+    #fcff7c 10px,
+    #ffe13a 10px,
+    #ffe13a 20px
+  ); */
+}
+
+.secondAd {
+  padding: 10px;
+  /* background: repeating-linear-gradient(
+    45deg,
+    #fcff7c,
+    #fcff7c 10px,
+    #ffe13a 10px,
+    #ffe13a 20px
+  ); */
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 12px;
+  background-color: orange;
+  border-top: 3px solid darkorange;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer a {
+  color: rgb(30, 30, 30);
 }
 
 @media (min-width: 720px) {
@@ -100,131 +220,4 @@ p {
   .footer {
     grid-column: 1 / span 12;
   }
-}
-
-/* Header */
-
-.header {
-  display: flex;
-  justify-content: center;
-  background-color: orange;
-  color: rgb(30, 30, 30);
-  border-bottom: 3px solid darkorange;
-}
-
-/* Main */
-
-.main {
-  display: grid;
-}
-
-.main .application {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 50px;
-  gap: 50px;
-}
-
-/* fix this!!! */
-@media (max-width: 720px) {
-  .main .application {
-    grid-template-columns: none;
-    gap: 50px;
-  }
-}
-
-.main .application .input {
-  display: grid;
-  text-align: center;
-}
-
-.main .application .input h2 {
-  align-self: flex-end;
-  justify-content: center;
-}
-
-.main .application .input input {
-  width: 100%;
-  height: 50px;
-  border-radius: 5px;
-  border-style: solid;
-  font-size: 16px;
-  font-family: inherit;
-  text-align: center;
-}
-
-/* change button on hover */
-.main .application .input button {
-  color: rgb(30, 30, 30);
-  background-color: inherit;
-  cursor: pointer;
-  font-size: 18px;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: darkorange;
-  width: 50%;
-  margin: 0 0 0 25%;
-}
-
-.main .application .output {
-  text-align: center;
-  align-items: center;
-}
-
-.main .application .output output {
-  color: green;
-}
-
-.main .content {
-  padding: 25px;
-}
-
-.main .content h2 {
-  text-align: center;
-}
-
-.main .content p {
-  text-align: justify;
-}
-
-/* Aside */
-
-.firstAd {
-  padding: 10px;
-  /* background: repeating-linear-gradient(
-    -45deg,
-    #fcff7c,
-    #fcff7c 10px,
-    #ffe13a 10px,
-    #ffe13a 20px
-  ); */
-}
-
-.secondAd {
-  padding: 10px;
-  /* background: repeating-linear-gradient(
-    45deg,
-    #fcff7c,
-    #fcff7c 10px,
-    #ffe13a 10px,
-    #ffe13a 20px
-  ); */
-}
-
-/* Footer */
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2px;
-  font-size: 12px;
-  background-color: orange;
-  border-top: 3px solid darkorange;
-  width: 100%;
-  bottom: 0;
-}
-
-.footer a {
-  color: rgb(30, 30, 30);
 }
