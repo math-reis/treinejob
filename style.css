@@ -17,13 +17,12 @@ a {
 
 h1 {
   font-size: 20px;
-  font-weight: 400;
   letter-spacing: 1px;
 }
 
 h2 {
   font-size: 18px;
-  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 p {
@@ -34,9 +33,9 @@ body {
   margin: 0 auto;
   max-width: 2048px;
   min-width: 480px;
-  color: rgb(50, 50, 50);
-  background-color: whitesmoke;
   font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+  color: inherit;
 }
 
 .container {
@@ -45,24 +44,25 @@ body {
   grid-template-rows: auto 1fr auto auto auto;
 }
 
-.header {
+header {
   display: flex;
   justify-content: center;
-  color: rgb(30, 30, 30);
   background-color: orange;
   border-bottom: 3px solid darkorange;
 }
 
+header h1 {
+  color: rgb(30, 30, 30);
+}
+
 .application {
   padding: 25px;
-  text-align: center;
 }
 
 .input {
   display: grid;
   padding: 25px 25px 25px 25px;
   margin: 25px 25px 40px 25px;
-  align-items: center;
   justify-content: center;
   background-color: rgb(255, 165, 0, 0.15);
   border: solid;
@@ -83,8 +83,9 @@ body {
 input {
   padding: 5px;
   margin: 25px 0 25px 0;
-  font-size: inherit;
   text-align: center;
+  font-size: inherit;
+  color: inherit;
   background-color: whitesmoke;
   border-radius: 5px;
   border-style: solid;
@@ -96,6 +97,7 @@ button {
   padding: 5px;
   margin: 0 100px 0 100px;
   font-size: 22px;
+  color: rgb(50, 50, 50);
   background-color: rgb(255, 165, 0, 0.15);
   border-style: solid;
   border-color: orange;
@@ -112,6 +114,8 @@ button:active {
 
 .output {
   padding: 25px;
+  text-align: center;
+  color: rgb(50, 50, 50);
   border-style: dashed;
   border-color: orange;
   border-radius: 3rem;
@@ -119,6 +123,7 @@ button:active {
 
 .content {
   padding: 25px;
+  color: rgb(50, 50, 50);
 }
 
 .content h2 {
@@ -132,31 +137,29 @@ button:active {
   text-align: justify;
 }
 
-/* Aside */
-
 .firstAd {
   padding: 10px;
-  /* background: repeating-linear-gradient(
+  margin: 10px;
+  background: repeating-linear-gradient(
     -45deg,
     #fcff7c,
     #fcff7c 10px,
     #ffe13a 10px,
     #ffe13a 20px
-  ); */
+  );
 }
 
 .secondAd {
   padding: 10px;
-  /* background: repeating-linear-gradient(
+  margin: 10px;
+  background: repeating-linear-gradient(
     45deg,
     #fcff7c,
     #fcff7c 10px,
     #ffe13a 10px,
     #ffe13a 20px
-  ); */
+  );
 }
-
-/* Footer */
 
 .footer {
   display: flex;
@@ -177,7 +180,7 @@ button:active {
 @media (min-width: 720px) {
   .container {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
   }
 
   .header {
