@@ -5,15 +5,15 @@ const checkSyllables = () => {
   for (i in catsName) {
     if (catsName.match(/ee|i|y/gi)) {
       document.getElementById("resultOutput").innerHTML =
-        "<b>Perfect!</b><br>Your kitten's name is awesome, and he (or she) will lovingly respond to your calls.";
+        "<b>Perfect!</b><br>Your kitten's name is awesome, and he will lovingly respond to your calls.";
       return;
     } else if (catsName.match(/a|e/gi)) {
       document.getElementById("resultOutput").innerHTML =
-        "<b>Good.</b><br>Your kitten's name is great, and he (or she) will attach to it easily.";
+        "<b>Good.</b><br>Your kitten's name is great, and he will attach to it easily.";
       return;
     } else {
       document.getElementById("resultOutput").innerHTML =
-        "<b>Not so good .</b><br>Your kitten's name is lovely, but he (or she) may find it difficult to identify. But don't worry, you can keep the name and follow some of the tips below.";
+        "<b>Not so good .</b><br>Your kitten's name is lovely, but he may find it difficult to identify. But don't worry, you can keep the name and follow some of the tips below.";
       return;
     }
   }

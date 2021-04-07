@@ -27,6 +27,7 @@ h2 {
 
 p {
   font-size: 16px;
+  line-height: 2;
 }
 
 body {
@@ -115,6 +116,7 @@ button:active {
 .output {
   padding: 25px;
   text-align: center;
+  line-height: 2;
   color: rgb(50, 50, 50);
   border-style: dashed;
   border-color: orange;
