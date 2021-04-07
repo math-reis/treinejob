@@ -42,7 +42,7 @@ p {
 
 .item {
   background-color: whitesmoke;
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   /* border-radius: 6px; */
   /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25); */
 }
@@ -51,7 +51,7 @@ p {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto auto auto;
-  /* gap: 24px; */
+  height: 100%;
 }
 
 @media (min-width: 720px) {
@@ -107,6 +107,9 @@ p {
 .header {
   display: flex;
   justify-content: center;
+  background-color: orange;
+  color: rgb(30, 30, 30);
+  border-bottom: 3px solid darkorange;
 }
 
 /* Main */
@@ -122,9 +125,11 @@ p {
   gap: 50px;
 }
 
-@media (max-width: 640px) {
+/* fix this!!! */
+@media (max-width: 720px) {
   .main .application {
     grid-template-columns: none;
+    gap: 50px;
   }
 }
 
@@ -148,17 +153,17 @@ p {
   text-align: center;
 }
 
+/* change button on hover */
 .main .application .input button {
-  color: rgb(38, 92, 155, 0.75);
+  color: rgb(30, 30, 30);
   background-color: inherit;
   cursor: pointer;
-  width: 20%;
   font-size: 18px;
-  border-style:ridge;
+  border-style: solid;
   border-radius: 10px;
-  border-color: rgb(160, 156, 194);
-  
-
+  border-color: darkorange;
+  width: 50%;
+  margin: 0 0 0 25%;
 }
 
 .main .application .output {
@@ -186,10 +191,24 @@ p {
 
 .firstAd {
   padding: 10px;
+  /* background: repeating-linear-gradient(
+    -45deg,
+    #fcff7c,
+    #fcff7c 10px,
+    #ffe13a 10px,
+    #ffe13a 20px
+  ); */
 }
 
 .secondAd {
   padding: 10px;
+  /* background: repeating-linear-gradient(
+    45deg,
+    #fcff7c,
+    #fcff7c 10px,
+    #ffe13a 10px,
+    #ffe13a 20px
+  ); */
 }
 
 /* Footer */
@@ -200,8 +219,12 @@ p {
   align-items: center;
   padding: 2px;
   font-size: 12px;
+  background-color: orange;
+  border-top: 3px solid darkorange;
+  width: 100%;
+  bottom: 0;
 }
 
 .footer a {
-  color: rgb(50, 50, 50);
+  color: rgb(30, 30, 30);
 }
