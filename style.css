@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Poppins";
   src: url(fonts/Poppins/Poppins-Regular.ttf);
-  /* font-display: swap; */
 }
 
 /* Global Style */
@@ -54,7 +53,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  border-bottom: 3px solid darkorange;
+  border-bottom: 3px solid orange;
 }
 
 .application {
@@ -69,7 +68,7 @@ header {
   background-color: rgb(255, 165, 0, 0.3);
   border: solid;
   border-width: 1px;
-  border-color: orangered;
+  border-color: orange;
   border-radius: 3rem;
   box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
 }
@@ -91,7 +90,7 @@ header {
   background-color: whitesmoke;
   border-radius: 5px;
   border-style: solid;
-  border-color: darkorange;
+  border-color: orange;
   border-width: 1px;
 }
 
@@ -102,7 +101,7 @@ button {
   color: rgb(50, 50, 50);
   background-color: rgb(255, 165, 0, 0.15);
   border-style: solid;
-  border-color: darkorange;
+  border-color: orange;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
 }
@@ -136,6 +135,7 @@ button:active {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
+  text-decoration: 2px underline darkorange;
 }
 
 .content p {
@@ -166,6 +166,7 @@ button:active {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
+  text-decoration: 2px underline darkorange;
 }
 
 .content2 p {
@@ -207,7 +208,7 @@ table {
   padding: 2px;
   font-size: 12px;
   background-color: orange;
-  border-top: 3px solid darkorange;
+  border-top: 3px solid orange;
   width: 100%;
   bottom: 0;
 }
