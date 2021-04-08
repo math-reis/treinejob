@@ -101,6 +101,10 @@ button {
   box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
 }
 
+.fas fa-paw {
+  font-display: swap;
+}
+
 button:active {
   margin: 3px 103px 3px 103px;
   font-size: 20px;
@@ -123,7 +127,7 @@ button:active {
 
 .content #cat1 {
   width: 75px;
-  height: 52.3;
+  height: 52.33;
 }
 
 .content h2 {
@@ -180,7 +184,7 @@ table {
 
 .content2 #cat3 {
   width: 75px;
-  height: auto;
+  height: 55.38px;
   margin: 25px 0 25px;
 }
 
