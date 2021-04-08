@@ -13,7 +13,7 @@ document.getElementById("nameInput").addEventListener("keyup", function (e) {
 function checkLetters() {
   const inputTxt = input.value;
 
-  if (/[ee|i|y]+/gi.test(inputTxt)) {
+  if (/[i|y]+/gi.test(inputTxt)) {
     output.innerText =
       "Perfect! Your kitten's name is awesome and easily recognizable. For a better experience, remember to pronounce it with affection.";
   } else if (/[a|e]+/gi.test(inputTxt)) {
@@ -24,5 +24,3 @@ function checkLetters() {
       "Not so good! Your kitten's name is lovely, but it may be difficult to recognize. Don't worry, you should keep this name and follow some of the tips below.";
   }
 }
-
-checkLetters(inputTxT);
