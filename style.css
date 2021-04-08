@@ -10,21 +10,25 @@ ul {
 
 a {
   text-decoration: none;
+  color: rgb(50, 50, 50);
 }
 
 h1 {
   font-size: 20px;
   letter-spacing: 1px;
+  color: rgb(50, 50, 50);
 }
 
 h2 {
   font-size: 18px;
   letter-spacing: 1px;
+  color: rgb(50, 50, 50);
 }
 
 p {
   font-size: 16px;
   line-height: 2;
+  color: rgb(50, 50, 50);
 }
 
 body {
@@ -33,7 +37,6 @@ body {
   min-width: 480px;
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
-  color: inherit;
   font-display: swap;
 }
 
@@ -46,12 +49,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: orange;
   border-bottom: 3px solid darkorange;
-}
-
-header h1 {
-  color: rgb(30, 30, 30);
 }
 
 .application #cat5 {
@@ -79,7 +77,6 @@ header h1 {
 .input h2 {
   margin: 0 auto;
   font-weight: bold;
-  color: rgb(255, 50, 0);
   border-width: 1px;
   border-radius: 5px;
 }
@@ -93,7 +90,7 @@ header h1 {
   background-color: whitesmoke;
   border-radius: 5px;
   border-style: solid;
-  border-color: orangered;
+  border-color: darkorange;
   border-width: 1px;
 }
 
@@ -104,7 +101,7 @@ button {
   color: rgb(50, 50, 50);
   background-color: rgb(255, 165, 0, 0.15);
   border-style: solid;
-  border-color: orangered;
+  border-color: darkorange;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
 }
@@ -120,22 +117,19 @@ button:active {
   padding: 25px;
   text-align: center;
   line-height: 2;
-  color: rgb(50, 50, 50);
   border-style: dashed;
-  border-color: orangered;
+  border-color: darkorange;
   border-radius: 3rem;
 }
 
 .content {
   padding: 0px 25px 25px 25px;
-  color: rgb(50, 50, 50);
 }
 
 .content h2 {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  color: rgb(255, 50, 0);
 }
 
 .content p {
@@ -160,14 +154,12 @@ button:active {
 
 .content2 {
   padding: 0px 25px 25px 25px;
-  color: rgb(50, 50, 50);
 }
 
 .content2 h2 {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  color: rgb(255, 50, 0);
 }
 
 .content2 p {
@@ -181,8 +173,9 @@ table {
   text-align: center;
   margin: 20px 0 25px 0;
   border-style: dashed;
-  border-color: orangered;
+  border-color: darkorange;
   border-radius: 3rem;
+  color: rgb(50, 50, 50);
 }
 
 .firstAd {
@@ -205,10 +198,6 @@ table {
   border-top: 3px solid darkorange;
   width: 100%;
   bottom: 0;
-}
-
-.footer a {
-  color: rgb(30, 30, 30);
 }
 
 @media (min-width: 720px) {
