@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Poppins";
   src: url(fonts/Poppins/Poppins-Regular.ttf);
-  font-display: swap;
+  /* font-display: swap; */
 }
 
 /* Global Style */
@@ -187,7 +187,7 @@ table {
 .content2 #cat3 {
   width: 75px;
   height: 55.38px;
-  margin: 25px 0 25px;
+  margin: 25px 0 0 0;
 }
 
 .firstAd {
