@@ -81,7 +81,7 @@ header h1 {
 .input h2 {
   margin: 0 auto;
   font-weight: bold;
-  color: darkorange;
+  color: orangered;
   border-width: 1px;
   border-radius: 5px;
 }
@@ -95,7 +95,7 @@ header h1 {
   background-color: whitesmoke;
   border-radius: 5px;
   border-style: solid;
-  border-color: darkorange;
+  border-color: orangered;
   border-width: 1px;
 }
 
@@ -137,7 +137,7 @@ button:active {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  color: darkorange;
+  color: orangered;
 }
 
 .content p {
@@ -169,7 +169,7 @@ button:active {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  color: darkorange;
+  color: orangered;
 }
 
 .content2 p {
