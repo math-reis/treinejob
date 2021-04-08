@@ -132,6 +132,7 @@ button:active {
 .donation {
   display: grid;
   justify-content: right;
+  
 }
 
 .donation #cat2 {
@@ -140,10 +141,10 @@ button:active {
   padding: 0 0 0 20px;
 }
 
-.donation form {
-  margin: 0;
+/* .donation form {
+  margin: 50px;
   padding: 10px 35px 25px 0;
-}
+} */
 
 .content2 {
   padding: 0px 25px 25px 25px;
