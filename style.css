@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+  font-display: swap;
+}
+
 /* Global Style */
 
 * {
