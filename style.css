@@ -15,33 +15,39 @@ ul {
 
 a {
   text-decoration: none;
-  color: rgb(50, 50, 50);
 }
 
 h1 {
   font-size: 20px;
   letter-spacing: 1px;
-  color: rgb(50, 50, 50);
 }
 
-h2 {
+h2,
+h3 {
   font-size: 18px;
+  font-weight: bold;
   letter-spacing: 1px;
-  color: rgb(50, 50, 50);
+  text-align: center;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+h3 {
+  text-decoration: 2px underline darkorange;
 }
 
 p {
   font-size: 16px;
   line-height: 2;
-  color: rgb(50, 50, 50);
+  text-align: justify;
 }
 
 body {
   margin: 0 auto;
-  max-width: 2048px;
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
-  font-display: swap;
+  /* font-display: swap; */
+  color: rgb(50, 50, 50);
 }
 
 .container {
@@ -71,14 +77,6 @@ header {
   border-color: orange;
   border-radius: 3rem;
   box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
-}
-
-.input h2 {
-  margin: 0 auto;
-  font-weight: bold;
-  text-align: center;
-  border-width: 1px;
-  border-radius: 5px;
 }
 
 .input input {
@@ -131,17 +129,6 @@ button:active {
   height: 52.3;
 }
 
-.content h2 {
-  margin: 0 auto;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: 2px underline darkorange;
-}
-
-.content p {
-  text-align: justify;
-}
-
 .donation {
   display: grid;
   justify-content: right;
@@ -160,13 +147,6 @@ button:active {
 
 .content2 {
   padding: 0px 25px 25px 25px;
-}
-
-.content2 h2 {
-  margin: 0 auto;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: 2px underline darkorange;
 }
 
 .content2 p {
