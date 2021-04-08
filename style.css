@@ -34,6 +34,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
   color: inherit;
+  font-display: swap;
 }
 
 .container {
@@ -78,7 +79,7 @@ header h1 {
 .input h2 {
   margin: 0 auto;
   font-weight: bold;
-  color: orangered;
+  color: darkorange;
   border-width: 1px;
   border-radius: 5px;
 }
