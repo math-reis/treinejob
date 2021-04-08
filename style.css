@@ -94,25 +94,6 @@ header {
   border-width: 1px;
 }
 
-button {
-  padding: 5px;
-  margin: 0 100px 0 100px;
-  font-size: 22px;
-  color: rgb(50, 50, 50);
-  background-color: rgb(255, 165, 0, 0.15);
-  border-style: solid;
-  border-color: darkorange;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px rgb(30, 30, 30, 0.25);
-}
-
-button:active {
-  margin: 3px 103px 3px 103px;
-  font-size: 20px;
-  background-color: rgb(255, 165, 0, 0.15);
-  box-shadow: 1px 1px 3px rgb(30, 30, 30, 0.5);
-}
-
 .output {
   padding: 25px;
   text-align: center;

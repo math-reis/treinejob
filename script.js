@@ -3,24 +3,20 @@ const output = document.getElementById("resultOutput");
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", (event) => checkLetters());
-input.addEventListener("keyup", (event) => keyUp(event));
 
-function keyUp(event) {
-  e = e || window.event;
-  if (e.keyCode == 13) {
+document.getElementById("nameInput").addEventListener("keyup", function (e) {
+  if (e.code) {
     document.getElementById("btn").click();
-    return false;
   }
-  return true;
-}
+});
 
 function checkLetters() {
   const inputTxt = input.value;
 
-  if (/[a|b|c]+/gi.test(inputTxt)) {
+  if (/[ee|i|y]+/gi.test(inputTxt)) {
     output.innerText =
       "Perfect! Your kitten's name is awesome and easily recognizable. For a better experience, remember to pronounce it with affection.";
-  } else if (/[d|e|f]+/gi.test(inputTxt)) {
+  } else if (/[a|e]+/gi.test(inputTxt)) {
     output.innerText =
       "Good! Your kitten's name is great, and it is easy to recognize. Do not forget to reinforce the high-pitched syllables.";
   } else {
