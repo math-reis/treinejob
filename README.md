@@ -4,7 +4,7 @@ A web application that evaluates your cat's name based on its sound frequency.
 
 ## App Demo
 
-https://howgoodismycatsname.com/
+https://math-reis.github.io/how-good-is-my-cats-name/
 
 ## Toolbox
 
