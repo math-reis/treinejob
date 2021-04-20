@@ -12,4 +12,4 @@ https://math-reis.github.io/how-good-is-my-cats-name/
 
 ## Licence
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/math-reis/color-flipper/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/math-reis/how-good-is-my-cats-name/blob/master/LICENSE)
