@@ -1,3 +1,1 @@
-# empty2
-
-empty repository
+# C# Exercises
