@@ -1,1 +1,1 @@
-# C# Exercises
+# C# exercises
