@@ -1,6 +1,5 @@
-# Bookyo
+# NBA Dashboard
 
-A complete, scalable and highly available web application that brings together millions of books from around the world.
 
 ## Technologies
 
