@@ -1,5 +1,6 @@
 # NBA Dashboard
 
+A web app that provides the history of your favorite NBA teams. 
 
 ## Technologies
 
