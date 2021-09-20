@@ -2,7 +2,7 @@
 
 The following was discovered as part of building this project:
 
-- The original package name 'io.mathreis.nba-dashboard' is invalid and this project uses 'io.mathreis.nbadashboard' instead. lol
+- The original package name 'io.mathreis.nba-dashboard' is invalid and this project uses 'io.mathreis.nbadashboard' instead.
 
 # Getting Started
 
