@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.batch.item.ItemProcessor;
 
 public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
@@ -17,7 +16,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
         Match match = new Match();
         match.setGameId(matchInput.getGameId());
         match.setTeamNameHome(matchInput.getTeamNameHome());
-        match.setGameDat(LocalDateTime.parse(matchInput.getGameDate()));         
+        match.setGameDat(LocalDateTime.parse(matchInput.getGameDate()));
         match.setWlHome(matchInput.getWlHome());
         match.setPtsHome(Integer.parseInteger(matchInput.getPtsHome()));
         match.setTeamNameAway(matchInput.getTeamNameAway());
@@ -29,10 +28,6 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
         match.setTeamNicknameHome(matchInput.getTeamNicknameHome());
         match.setTeamCityNameAway(matchInput.getTeamCityNameAway());
         match.setTeamNicknameAway(matchInput.getTeamNicknameAway());
-
-
-
-
 
         return match;
     }
