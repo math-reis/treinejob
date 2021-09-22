@@ -42,15 +42,16 @@ public class BatchConfig {
     }
 
     @Bean
-    public MatchItemProcessor processor() {
-        return new MatchItemProcessor();
+    public MMatchDataProcessor processor() {
+        return new MatchDataProcessor();
     }
 
     @Bean
     public JdbcBatchItemWriter<Match> writer(DataSource dataSource) {
         return new JdbcBatchItemWriterBuilder<Match>()
                 .itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())
-                .sql("INSERT INTO people (first_name, last_name) VALUES (:firstName, :lastName)").dataSource(dataSource)
-                .build();
+                .sql("INSERT INTO match (game_id, team_name_home, game_date, wl_home, pts_home, team_name_away, wl_away, pts_away, season, attendance, team_city_name_home, team_nickname_home, team_city_name_away, team_nickname_away) "
+                        + " VALUES (:gameId, :teamNameHome, :gameDate, :wlHome, :ptsHome, :teamNameAway, :wlAway, :ptsAway, :season, :attendance, :teamCityNameHome, :teamNicknameHome, :teamCityNameAway, :teamNicknameAway)")
+                .dataSource(dataSource).build();
     }
 }
